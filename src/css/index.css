@@ -1,0 +1,277 @@
+body {
+    background-color: #F3F5FC;
+}
+
+input, p, button, h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400; 
+}
+
+h1 {
+    margin: 40px 0 0 40px;
+    float: left;
+}
+
+h2 {
+    font-weight: 700;
+    color: #343A40;
+    text-align: center;
+    line-height: 120%;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.entry {
+    width: 50%;
+    padding: 5% 3% 0 5%;
+    float: left;
+}
+
+.material-symbols-rounded {
+    float: left;
+    color: #495057;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+textarea {
+    width: 90%;
+    height: 13em;
+    border: none;
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #0A3871;
+}
+
+.entry > textarea {
+    resize: none;
+    background-color: transparent;
+    color: #0A3871;
+    font-size: 32px;
+    line-height: 150%;
+    padding-left: 10px;
+}
+
+.is-error {
+    border: 2px solid red;
+    border-radius: 24px;
+}
+
+.container-info {
+    width: 100%;
+    float: left;
+    padding-bottom: 15px;
+}
+
+.info {
+    font-size: 12px; 
+    color: #495057;
+    opacity: 0.8;
+    float: left;
+    margin: 5px 0 0 5px;
+}
+
+.output {
+    display: table;
+    background-color: white;
+    width: 25%;
+    height: 40em;
+    float: left;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.output > img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.output > p {
+    color: #495057;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+button {
+    width: 270px;
+    height: 67px;
+    padding: 24px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    background-color: transparent;
+    color: #0A3871;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.container-buttons {
+    max-width: 700px;
+}
+
+.encrypt {
+    float: left;
+    color: white;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.decrypt {
+    float: right;
+}
+
+.container-output {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#result {
+    display: none;
+    vertical-align: middle;
+    padding: 7% 3% 0 3%;
+}
+
+#inputOutput {
+    font-size: 24px;
+    color: #495057;
+}
+
+.copy {
+    margin-top: 46%;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin-top: 70px;
+    height: 8em;
+    border-top: 1px solid #6666;
+}
+
+footer > p {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 10px 20px 10px;
+}
+
+footer > p > span {
+    width: 100%;
+    float: left;
+}
+
+footer > p > span > a {
+    color: black;
+}
+
+@media only screen and (max-height: 780px) { 
+    footer {
+        border-top: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .container {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    h1 {
+        margin: 10px 0 0 10px;
+    }
+
+    .entry {
+        width: 90%;
+        padding: 5% 3% 40px 5%;
+    }
+
+    .entry > textarea {
+        height: 7em;
+    }
+
+    .container-buttons > button {
+        width: 100%;
+        float: left;
+    } 
+
+    .decrypt{
+        margin-top: 10px;
+    }
+
+    #no-content {
+        display: block;
+        margin: 14% auto 0 auto;
+        padding: 1px;
+    }
+
+    .container-output > img {
+        display: none;
+    }
+
+    .output {
+        width: 90%;
+        height: 15em;
+        margin: 0 auto;
+        display: flex;
+        float: unset;
+    }
+
+    .container-output > textarea {
+        height: 5em;
+    }
+
+    .copy {
+        margin-top: 0;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1220px) {
+    .entry {
+        width: 90%;
+        padding: 5% 3% 40px 5%;
+    }
+
+    .container-output > img {
+        display: none;
+    }
+
+    .output {
+        width: 90%;
+        height: 16em;
+        margin: 0 auto;
+        display: grid;
+        float: unset;
+    }
+
+    #no-content {
+        display: block;
+        margin-top: 10%;
+    }
+
+    .container-output > textarea {
+        height: 5em;
+    }
+
+    .copy {
+        margin-top: 0%;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1220px) {
+
+}
